@@ -1,7 +1,7 @@
 import tkinter as tk
 from datetime import datetime, timedelta
 import time
-import chime
+#import chime
 import threading
 import sys, os, shutil
 import math
@@ -596,7 +596,7 @@ def countdown_clock(hours, minutes, seconds, color, clock_use):
 
 
 def clock_setter(hour, minute, second):
-    time.sleep(0.0001)
+    time.sleep(1)
     print(f"The time is {hour,minute,second}")
 
     #Change the values of the string variables initialized by the tk() module. The hour value starts from hour - 1 because if you have 2 hours left, you actually have
